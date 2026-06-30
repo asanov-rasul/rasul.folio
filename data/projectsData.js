@@ -29,15 +29,4 @@ export const projectsData = [
     githubLink: "https://github.com/asanov-rasul/elite_cosmetic_shop",
     image: "/images/projects/eliteCosmetic.webp"
   },
-  {
-    id: "craft-ai",
-    title: "Craft AI",
-    description:
-      "ИИ-ассистент для текстов с потоковыми ответами, готовыми пресетами промптов и адаптивным редактором продакшен-уровня.",
-    tags: ["React", "Полный стек", "ИИ"],
-    liveLink: "https://example.com",
-    githubLink: "https://github.com/example/craft-ai",
-    image:
-      "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1400&q=80"
-  }
 ];
