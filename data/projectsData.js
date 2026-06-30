@@ -1,36 +1,33 @@
 export const projectsData = [
   {
-    id: "nova-commerce",
-    title: "Nova Commerce",
+    id: "longflow-studio",
+    title: "Long Flow",
     description:
-      "Выразительная витрина интернет-магазина с продуктовым сторителлингом, быстрым сценарием корзины и оформлением заказа для роста конверсии.",
-    tags: ["React", "Next.js", "Интернет-магазин"],
-    liveLink: "https://example.com",
-    githubLink: "https://github.com/example/nova-commerce",
-    image:
-      "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1400&q=80"
+      "Сайт для рекламного агенства. Был написан сначало на нативном Js, после чего переписан на React. (Заказчик сам вносил изменения на сайт)",
+    tags: ["React", "JavaScript", "Лендинг"],
+    liveLink: "http://longflowstudio.ru/",
+    githubLink: "https://github.com/asanov-rasul/longflow_react",
+    image: "/images/projects/longflow.webp"
   },
   {
-    id: "pulse-dashboard",
-    title: "Pulse Analytics",
+    id: "cake-builder",
+    title: "Cake Builder",
     description:
-      "Дашборд аналитики в реальном времени с плотными представлениями данных, адаптивными графиками и спокойным UX для быстрых решений.",
-    tags: ["React", "Полный стек", "Дашборд"],
-    liveLink: "https://example.com",
-    githubLink: "https://github.com/example/pulse-analytics",
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1400&q=80"
+      "SaaS-платформа, которая автоматизирует приём заказов для кондитеров. 3D-конструктор позволяет клиенту самому настроить торт — форма, коржи, крем, декор — и сразу оформить заявку.",
+    tags: ["React", "SaaS", "Автоматизация"],
+    liveLink: "https://cakebuilder-beige.vercel.app/",
+    githubLink: "https://github.com/asanov-rasul/cakebuilder",
+    image: "/images/projects/cakeBuilder.webp"
   },
   {
-    id: "atlas-studio",
-    title: "Atlas Studio",
+    id: "elite-cosmetic-shop",
+    title: "Elite Cosmetic Shop",
     description:
-      "Совместное творческое пространство с плавными досками, сценариями через палитру команд и приятными микровзаимодействиями.",
-    tags: ["Next.js", "Framer Motion", "Сервис"],
-    liveLink: "https://example.com",
-    githubLink: "https://github.com/example/atlas-studio",
-    image:
-      "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1400&q=80"
+      "Интернет-магазин селективной и корейской косметики для реального бизнеса в Туркменистане. Каталог с фильтрацией, корзина, оформление заказа с оплатой при получении.",
+    tags: ["Next.js", "Интернет-магазин", "Фильтры"],
+    liveLink: "https://elite-cosmetic-shop.vercel.app/",
+    githubLink: "https://github.com/asanov-rasul/elite_cosmetic_shop",
+    image: "/images/projects/eliteCosmetic.webp"
   },
   {
     id: "craft-ai",

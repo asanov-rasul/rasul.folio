@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import InteractiveBackground from "@/components/InteractiveBackground";
 import Navbar from "@/components/Navbar";
 import Projects from "@/components/Projects";
+import ExperienceTimeline from "@/components/ExperienceTimeline";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Hero />
       <Projects />
       <ExperienceSkills />
+      <ExperienceTimeline />
       <Contact />
     </main>
   );

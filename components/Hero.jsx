@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Download } from "lucide-react";
+import { ArrowRight, Download, MessageCircle } from "lucide-react";
 import Typewriter from "@/components/Typewriter";
 
 const metrics = [
@@ -28,9 +28,11 @@ export default function Hero() {
               <Typewriter />
             </span>
           </h1>
+
           <p className="mt-7 max-w-2xl text-balance text-lg leading-8 text-slate-300 sm:text-xl">
             Создаю быстрые и выразительные веб-интерфейсы, где анимация работает на смысл, дизайн-системы остаются аккуратными, а каждое взаимодействие ощущается продуманным.
           </p>
+
           <div className="mt-9 flex flex-col gap-4 sm:flex-row">
             <a
               href="#projects"
@@ -39,14 +41,26 @@ export default function Hero() {
               Смотреть проекты
               <ArrowRight size={18} className="transition group-hover:translate-x-1" />
             </a>
+
             <a
               href="#contact"
               className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-white/15 bg-white/[0.04] px-6 text-sm font-semibold text-white backdrop-blur-xl transition hover:border-cyan-200/60 hover:bg-white/[0.08] focus:outline-none focus:ring-2 focus:ring-white/40 focus:ring-offset-2 focus:ring-offset-ink"
             >
-              <Download size={18} />
+              <MessageCircle size={18} />
               Обсудить задачу
             </a>
+
+            <a
+              href="https://docs.google.com/document/d/1CusccIcf-PkbgxLrCs9YR_Kuwp31_hZu/export?format=pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex min-h-12 items-center justify-center gap-2 rounded-full border border-white/15 bg-white/[0.04] px-6 text-sm font-semibold text-white backdrop-blur-xl transition hover:border-cyan-200/60 hover:bg-white/[0.08] focus:outline-none focus:ring-2 focus:ring-white/40 focus:ring-offset-2 focus:ring-offset-ink"
+            >
+              <Download size={18} />
+              Скачать резюме
+            </a>
           </div>
+
           <div className="mt-12 grid max-w-2xl grid-cols-2 gap-3 sm:grid-cols-3">
             {metrics.map(([value, label]) => (
               <div key={label} className="glass-border min-w-0 rounded-lg p-4 last:col-span-2 sm:last:col-span-1">
@@ -70,6 +84,7 @@ export default function Hero() {
               <span className="h-3 w-3 rounded-full bg-amber-300" />
               <span className="h-3 w-3 rounded-full bg-emerald-300" />
             </div>
+
             <div className="mt-6 rounded-2xl border border-white/10 bg-slate-950/70 p-5 font-mono text-sm text-slate-300">
               <p className="text-cyan-200">const experience = &#123;</p>
               <p className="pl-4">name: &quot;Асанов Расул&quot;,</p>
@@ -78,6 +93,7 @@ export default function Hero() {
               <p className="pl-4">quality: &quot;доступно, быстро, запоминается&quot;</p>
               <p className="text-cyan-200">&#125;;</p>
             </div>
+
             <div className="mt-6 grid grid-cols-2 gap-3 sm:gap-4">
               {["Дизайн-системы", "Анимация", "Производительность", "UX-полировка"].map((item) => (
                 <div key={item} className="flex min-h-[72px] min-w-0 items-center rounded-2xl border border-white/10 bg-white/[0.045] p-4 text-[13px] leading-5 text-slate-200 [overflow-wrap:anywhere] sm:text-sm">
@@ -85,6 +101,7 @@ export default function Hero() {
                 </div>
               ))}
             </div>
+
             <motion.div
               className="static mt-4 inline-flex rounded-full border border-cyan-200/30 bg-cyan-200/10 px-4 py-2 text-sm text-cyan-100 backdrop-blur-xl sm:absolute sm:bottom-6 sm:right-6 sm:mt-0"
               animate={{ y: [0, -8, 0] }}
