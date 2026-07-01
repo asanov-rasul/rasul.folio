@@ -3,7 +3,7 @@ export const projectsData = [
     id: "longflow-studio",
     title: "Long Flow",
     description:
-      "Сайт для рекламного агенства. Был написан сначало на нативном Js, после чего переписан на React. (Заказчик сам вносил изменения на сайт)",
+      "Сайт для рекламного агентства. Написан на нативном JavaScript, затем переработан на React с улучшенной архитектурой.",
     tags: ["React", "JavaScript", "Лендинг"],
     liveLink: "http://longflowstudio.ru/",
     githubLink: "https://github.com/asanov-rasul/longflow_react",

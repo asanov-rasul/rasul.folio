@@ -78,14 +78,23 @@ export default function Hero() {
           className="relative mx-auto w-full max-w-md sm:aspect-[4/5] lg:max-w-lg"
         >
           <div className="absolute inset-0 rounded-[2rem] bg-[conic-gradient(from_180deg_at_50%_50%,rgba(45,212,191,0.4),rgba(99,102,241,0.42),rgba(244,114,182,0.32),rgba(45,212,191,0.4))] blur-2xl" />
-          <div className="glass-border relative overflow-hidden rounded-[1.75rem] p-5 shadow-card sm:h-full">
+          <div className="glass-border relative flex flex-col overflow-hidden rounded-[1.75rem] p-5 shadow-card sm:h-full">
             <div className="flex items-center gap-2">
               <span className="h-3 w-3 rounded-full bg-rose-400" />
               <span className="h-3 w-3 rounded-full bg-amber-300" />
               <span className="h-3 w-3 rounded-full bg-emerald-300" />
             </div>
 
-            <div className="mt-6 rounded-2xl border border-white/10 bg-slate-950/70 p-5 font-mono text-sm text-slate-300">
+            {/* Photo placeholder */}
+            <div className="mt-4 flex-1 overflow-hidden rounded-2xl">
+              <img
+                src="/images/myPhoto.webp"
+                alt="Фото профиля"
+                className="w-full h-full object-cover object-center"
+              />
+            </div>
+
+            <div className="mt-4 rounded-2xl border border-white/10 bg-slate-950/70 p-5 font-mono text-sm text-slate-300">
               <p className="text-cyan-200">const experience = &#123;</p>
               <p className="pl-4">name: &quot;Асанов Расул&quot;,</p>
               <p className="pl-4">stack: [&quot;React&quot;, &quot;Next.js&quot;, &quot;Motion&quot;],</p>
@@ -93,22 +102,6 @@ export default function Hero() {
               <p className="pl-4">quality: &quot;доступно, быстро, запоминается&quot;</p>
               <p className="text-cyan-200">&#125;;</p>
             </div>
-
-            <div className="mt-6 grid grid-cols-2 gap-3 sm:gap-4">
-              {["Дизайн-системы", "Анимация", "Производительность", "UX-полировка"].map((item) => (
-                <div key={item} className="flex min-h-[72px] min-w-0 items-center rounded-2xl border border-white/10 bg-white/[0.045] p-4 text-[13px] leading-5 text-slate-200 [overflow-wrap:anywhere] sm:text-sm">
-                  {item}
-                </div>
-              ))}
-            </div>
-
-            <motion.div
-              className="static mt-4 inline-flex rounded-full border border-cyan-200/30 bg-cyan-200/10 px-4 py-2 text-sm text-cyan-100 backdrop-blur-xl sm:absolute sm:bottom-6 sm:right-6 sm:mt-0"
-              animate={{ y: [0, -8, 0] }}
-              transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-            >
-              Фокус на 60 fps
-            </motion.div>
           </div>
         </motion.div>
       </div>
