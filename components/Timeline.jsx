@@ -138,7 +138,7 @@ export default function Timeline() {
   const titleInView = useInView(titleRef, { once: true, margin: "-60px" });
 
   return (
-    <section id="experience" className="relative px-6 py-28">
+    <section id="experience" className="relative px-6 py-24">
       <div className="mx-auto max-w-5xl">
         {/* Заголовок */}
         <motion.div
