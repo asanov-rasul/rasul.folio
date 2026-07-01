@@ -142,7 +142,7 @@ export default function ExperienceTimeline() {
   const isLineInView = useInView(lineRef, { once: true, margin: "-100px" });
 
   return (
-    <section id="timeline" className="relative px-5 py-28 sm:px-8 lg:px-10">
+    <section id="timeline" className="relative px-5 py-24 sm:px-8 lg:px-10">
       <div className="mx-auto max-w-7xl">
         {/* Заголовок */}
         <motion.div
