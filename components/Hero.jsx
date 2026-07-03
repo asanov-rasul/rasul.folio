@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ArrowRight, Download, MessageCircle } from "lucide-react";
+import Image from "next/image";
 import Typewriter from "@/components/Typewriter";
 
 const metrics = [
@@ -86,11 +87,14 @@ export default function Hero() {
             </div>
 
             {/* Photo placeholder */}
-            <div className="mt-4 flex-1 overflow-hidden rounded-2xl">
-              <img
+            <div className="relative mt-4 flex-1 overflow-hidden rounded-2xl">
+              <Image
                 src="/images/myPhoto.webp"
                 alt="Фото профиля"
-                className="w-full h-full object-cover object-center"
+                fill
+                priority
+                sizes="(min-width: 1024px) 40vw, (min-width: 640px) 50vw, 100vw"
+                className="object-cover object-center"
               />
             </div>
 
