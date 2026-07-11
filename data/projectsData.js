@@ -29,4 +29,14 @@ export const projectsData = [
     githubLink: "https://github.com/asanov-rasul/elite_cosmetic_shop",
     image: "/images/projects/eliteCosmetic.webp"
   },
+  {
+    id: "skin-pulse",
+    title: "Skin Pulse",
+    description:
+      "Платформа для мониторинга и отслеживания цен на скины CS2 в реальном времени. Включает динамический поиск по категориям (ножи, перчатки, кейсы), отображение изменения стоимости за 24 часа, а также списки лидеров роста и падения цен.",
+    tags: ["Next.js", "Supabase", "API Integration", "Price Tracking"],
+    liveLink: "https://skinpulse.vercel.app/",
+    githubLink: "https://github.com/asanov-rasul/skinpulse",
+    image: "/images/projects/skinPulse.webp"
+  },
 ];
