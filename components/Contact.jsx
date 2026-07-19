@@ -65,7 +65,7 @@ export default function Contact() {
             {[
               { href: "mailto:rasabet666@gmail.com", label: "Email", icon: Mail },
               { href: "https://github.com/asanov-rasul", label: "GitHub", icon: Github },
-              { href: "https://t.me/rasul20055", label: "Telegram", icon: Telegram }
+              { href: "https://t.me/rasul20055", label: "Telegram", icon: Send }
             ].map((link) => {
               const Icon = link.icon;
               return (
