@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { Github, Mail, Menu, Send, X } from "lucide-react";
 
 const links = [
   { href: "#home", label: "Главная" },
@@ -10,6 +10,12 @@ const links = [
   { href: "#skills", label: "Навыки" },
   { href: "#timeline", label: "Опыт" },
   { href: "#contact", label: "Контакты" }
+];
+
+const socialLinks = [
+  { href: "mailto:rasabet666@gmail.com", label: "Написать на почту", icon: Mail },
+  { href: "https://github.com/asanov-rasul", label: "GitHub", icon: Github },
+  { href: "https://t.me/rasul20055", label: "Telegram", icon: Send }
 ];
 
 export default function Navbar() {
@@ -39,7 +45,7 @@ export default function Navbar() {
         <a href="#home" className="font-display text-base font-semibold tracking-normal text-white">
           Расул<span className="text-cyan-200">.folio</span>
         </a>
-        <div className="hidden items-center gap-1 md:flex">
+        <div className="hidden items-center gap-1 lg:flex">
           {links.map((link) => (
             <a
               key={link.href}
@@ -50,12 +56,24 @@ export default function Navbar() {
             </a>
           ))}
         </div>
-        <a
-          href="#contact"
-          className="hidden rounded-full bg-white px-4 py-2 text-sm font-semibold text-slate-950 transition hover:bg-cyan-200 md:inline-flex"
-        >
-          Связаться
-        </a>
+        <div className="hidden items-center gap-1 md:flex" aria-label="Социальные ссылки">
+          {socialLinks.map((link) => {
+            const Icon = link.icon;
+            return (
+              <a
+                key={link.label}
+                href={link.href}
+                target={link.href.startsWith("http") ? "_blank" : undefined}
+                rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                aria-label={link.label}
+                title={link.label}
+                className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/[0.05] text-slate-300 transition hover:border-cyan-200/60 hover:bg-white/[0.09] hover:text-cyan-200 focus:outline-none focus:ring-2 focus:ring-cyan-200"
+              >
+                <Icon size={18} aria-hidden="true" />
+              </a>
+            );
+          })}
+        </div>
         <button
           type="button"
           className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/[0.05] text-white md:hidden"
@@ -85,6 +103,24 @@ export default function Navbar() {
                 {link.label}
               </a>
             ))}
+            <div className="mt-1 flex items-center gap-2 border-t border-white/10 px-3 pt-3" aria-label="Социальные ссылки">
+              {socialLinks.map((link) => {
+                const Icon = link.icon;
+                return (
+                  <a
+                    key={link.label}
+                    href={link.href}
+                    target={link.href.startsWith("http") ? "_blank" : undefined}
+                    rel={link.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                    aria-label={link.label}
+                    title={link.label}
+                    className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/[0.05] text-slate-300 transition hover:border-cyan-200/60 hover:text-cyan-200 focus:outline-none focus:ring-2 focus:ring-cyan-200"
+                  >
+                    <Icon size={18} aria-hidden="true" />
+                  </a>
+                );
+              })}
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
