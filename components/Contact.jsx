@@ -64,7 +64,8 @@ export default function Contact() {
           <div className="mt-8 flex flex-wrap gap-3">
             {[
               { href: "mailto:rasabet666@gmail.com", label: "Email", icon: Mail },
-              { href: "https://github.com/asanov-rasul", label: "GitHub", icon: Github }
+              { href: "https://github.com/asanov-rasul", label: "GitHub", icon: Github },
+              { href: "https://t.me/rasul20055", label: "Telegram", icon: Telegram }
             ].map((link) => {
               const Icon = link.icon;
               return (
